@@ -73,4 +73,4 @@ public class Main {
 } 
 ```
 ## Output 
-  ![image](https://user-images.githubusercontent.com/119514056/209346456-79e2efc4-53cb-4c28-929e-3f459b52ea86.png)
+  <img src="Screenshot 202024-05-03 20202751.png" />
