@@ -73,4 +73,23 @@ public class Main {
 } 
 ```
 ## Output 
-  <img src="Screenshot 202024-05-03 20202751.png" />
+  <img src="utspbo.png" />
+
+## Deskripsi Penjelasan
+
+1. Interface Tipe
+    Ini adalah sebuah antarmuka dengan satu metode, yaitu `genre()`. Antarmuka ini menetapkan kontrak bahwa setiap kelas yang mengimplementasikan antarmuka `Tipe` harus menyediakan implementasi untuk metode `genre()`.
+
+2. Abstract class Game
+   kelas abstrak yang mengimplementasikan antarmuka `Tipe`. Ini memiliki satu variabel instance `nama` yang bersifat private dan sebuah konstruktor untuk menginisialisasi variabel tersebut. Ini juga memiliki metode `getNama()` yang mengembalikan nilai variabel `nama`.
+
+3. Class Tembakan
+    Ini adalah kelas yang mewarisi dari kelas `Game`. Ini memiliki variabel instance `nama` yang tersedia dari kelas induk dan mengimplementasikan metode `genre()` sesuai dengan kontrak antarmuka `Tipe`. Setiap kali objek `Tembakan` dibuat, ia akan mencetak pesan tentang jenis permainan tembakan yang diberikan.
+
+4. Class Balapan
+    Ini juga adalah kelas yang mewarisi dari kelas `Game`. Seperti `Tembakan`, ia memiliki variabel instance `nama` yang tersedia dari kelas induk dan mengimplementasikan metode `genre()` sesuai dengan kontrak antarmuka `Tipe`. Setiap kali objek `Balapan` dibuat, ia akan mencetak pesan tentang jenis permainan balapan yang diberikan.
+
+5. Main Class
+   Ini merupakan kelas utama yang memiliki metode `main()`. Di sini, objek `tembakan` dan `balapan` dibuat menggunakan kelas `Tembakan` dan `Balapan` secara berturut-turut. Kemudian, metode `genre()` dipanggil untuk masing-masing objek, yang akan mencetak pesan sesuai dengan jenis permainan yang sesuai.
+
+Dengan demikian, kode ini mendemonstrasikan penggunaan interface (`Tipe`), inheritance (kelas `Tembakan` dan `Balapan` yang mewarisi dari kelas `Game`), encapsulation (variabel `nama` yang bersifat private), dan polimorfisme (pemanggilan metode `genre()` pada objek `tembakan` dan `balapan` yang sebenarnya memanggil implementasi yang berbeda dari metode tersebut).  
